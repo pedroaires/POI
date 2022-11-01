@@ -12,7 +12,8 @@ public class ControllerQualquer {
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public String exibindoQualquerCoisa(){
-        return "Qualquer coisa!";
+        return "Pra chamar de seu!\n" +
+                "acesse \"/sorteio\"";
     }
 
     @GetMapping(value = "/sorteio")
